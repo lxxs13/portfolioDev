@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #060610;
+    width: 100%;
+
+    .div-container-stepper {
+        background-color: #060610;
+        width: 80%;
+    }
+
+    .poppins-medium {
+        font-size: 64px;
+    }
+
+    .poppins-regular {
+        font-size: 38px;
+    }
+}

@@ -1,0 +1,31 @@
+.custom-primary {
+    background-color: #060610;
+    color: #f0ffff;
+    position: sticky;
+  }
+  
+  .navigation-links {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .navigation-links span {
+    cursor: pointer;
+  }
+  
+  .toolbar-display {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  mat-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+  }

@@ -1,0 +1,38 @@
+<header>
+    <mat-toolbar class="custom-primary">
+        <div class="toolbar-display">
+            <div>
+                <span class="paragraph-bold">Luis Quiroz Schlemm</span>
+            </div>
+
+            <!-- @if (showNavigation()) { -->
+            <div class="navigation-links">
+                <span class="paragraph-light" (click)="scrollToSection('welcome-section')">Inicio</span>
+                <span class="paragraph-light" (click)="scrollToSection('my-experience')">Sobre mí</span>
+                <span class="paragraph-light" (click)="scrollToSection('my-skills')">Mis skills</span>
+                <span class="paragraph-bold" (click)="scrollToSection('my-projects')">Mis proyectos</span>
+            </div>
+
+            <!-- } -->
+
+
+            <!-- <button mat-icon-button *ngIf="!showNavigation()" [matMenuTriggerFor]="menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="scrollToSection('presentation')">
+                    <span>Inicio</span>
+                </button>
+                <button mat-menu-item (click)="scrollToSection('about-me')">
+                    <span>Sobre mí</span>
+                </button>
+                <button mat-menu-item (click)="scrollToSection('my-projects')">
+                    <span>Proyectos</span>
+                </button>
+                <button mat-menu-item (click)="scrollToSection('contact-me')">
+                    <span>Contáctame</span>
+                </button>
+            </mat-menu> -->
+        </div>
+    </mat-toolbar>
+</header>

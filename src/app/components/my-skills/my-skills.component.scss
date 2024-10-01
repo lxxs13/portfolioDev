@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #060610;
+    width: 100%;
+
+    .div-skill-list {
+        // width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 8px;
+
+        .div-skill-4 {
+            grid-column-start: 1;
+            grid-row-start: 2;
+            height: 100%;
+        }
+
+        .div-skill-5 {
+            grid-column-start: 2;
+            grid-row-start: 2;
+            height: 100%;
+        }
+
+        .div-skill-6 {
+            grid-column-start: 3;
+            grid-row-start: 2;
+            height: 100%;
+        }
+
+        .div-skill-7 {
+            grid-row: span 2 / span 2;
+            grid-column-start: 4;
+            grid-row-start: 1;
+        }
+
+        mat-card:hover {
+            background-color: #f0ffff15;
+            cursor: pointer;
+        }
+
+        mat-card {
+            height: 100%;
+            border: 1px solid azure;
+            border-radius: 12px;
+            background-color: #d9d9d90a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 325ms ease-in-out;
+
+            &.mat-card-content-details {
+                display: flex;
+                justify-content: space-evenly;
+                align-content: space-around;
+                flex-direction: column;
+                height: 100%;
+
+                .poppins-bold {
+                    text-align: center;
+                    font-size: 48px;
+                }
+
+                .poppins-semibold {
+                    font-size: 20px;
+                }
+            }
+
+            button[mat-flat-button]::before {
+                content: '';
+                width: 30px;
+                height: 30px;
+                background-image: url('../../../assets/icons/download-icon.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-right: 12px;
+            }
+        }
+
+    }
+
+    .poppins-medium {
+        font-size: 64px;
+    }
+
+    .poppins-regular {
+        font-size: 38px;
+    }
+}
